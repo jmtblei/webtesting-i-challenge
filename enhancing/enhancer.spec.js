@@ -49,6 +49,7 @@ describe('enhancer.js', () => {
         });
         it('should decrease durability by 10 if starting enhancement was >=15', () => {
             expect(enhancer.fail(item1).durability).toBe(90);
+            // expect(enhancer.fail(item2).durability).toBe(65);
         });
         it('should decrease durability by 10 if starting enhancement was >=15, and decrease enhancement by 1 if enhancement was >16', () => {
             expect(enhancer.fail(item2).enhancement).toBe(19);
